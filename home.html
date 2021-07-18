@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <title>양말장사</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Jua', sans-serif;
+        }
+
+        .pic {
+            width: 500px;
+            margin: auto;
+            display: block;
+        }
+
+        .pic .img {
+            background-image: url("http://image.auction.co.kr/itemimage/11/c4/98/11c4988366.jpg");
+            height: 500px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .tit {
+            /*padding-left:600px;*/
+        }
+
+        .sz {
+            font-size: 20px;
+        }
+
+        .tit p {
+            font-size: 15px;
+        }
+        .input-group {
+            margin-top: 20px;
+        }
+        .orderBtn {
+            background: blue;
+            border: none;
+            border-radius: 3px;
+            color: aliceblue;
+            width: 80px;
+            height: 35px;
+            margin: auto;
+            display: block;
+            cursor: pointer;
+
+        }
+
+        .last {
+            margin-bottom: 20px;
+        }
+
+    </style>
+     <script>
+         function hello(){
+             alert("주문 완료!")
+         }
+    </script>
+
+</head>
+
+<body>
+<div class="pic">
+    <div class="img"></div>
+
+    <h1 class="tit">흰양말 팝니다!
+        <span class="sz">가격:3000원/개</span>
+        <p>이 양말은 사실 특별한 힘을 가지고 있어요.양말을 신고 소원을 빌면 짜자잔 뭐든지 이뤄지게 된답니다.하나 신으세요! 양말 향이 아주 좋아요</p>
+    </h1>
+    <div class="input-group input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing">주문자 이름</span>
+        </div>
+        <input type="text" class="form-control" >
+    </div>
+    <div class="input-group input-group">
+        <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01">수량</label>
+        </div>
+        <select class="custom-select" id="inputGroupSelect01">
+            <option selected>--수량을 선택하세요--</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+        </select>
+    </div>
+    <div class="input-group input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing">주소</span>
+        </div>
+        <input type="text" class="form-control"  >
+    </div>
+    <div class="input-group input-group last">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing">전화번호</span>
+        </div>
+        <input type="text" class="form-control" >
+    </div>
+<button class="orderBtn" onclick="hello()">주문하기</button>
+</div>
+
+</div>
+
+</body>
+
+</html>
